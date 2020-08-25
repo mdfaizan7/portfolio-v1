@@ -1,20 +1,42 @@
 .vertical-timeline-element-content .vertical-timeline-element-date {
-	text-align: left;
+  text-align: left;
 }
 
 ul li {
-	padding: 5px 0px;
+  padding: 5px 0px;
 }
 
 .Card {
-	color: #fff;
-	text-align: left;
-	.subtitle {
-		color: #ffffff;
-	}
+  color: #fff;
+  text-align: left;
+  .subtitle {
+    color: #ffffff;
+  }
 
-	.detailsheader {
-		font-weight: 500;
-		font-size: 1.2rem;
-	}
+  .detailsheader {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}
+
+.sub {
+  color: #555555;
+  font-weight: 600;
+}
+
+.head-j {
+  color: #555555;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 45px;
+  stroke: 3px;
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .head-j {
+    font-size: 35px;
+    stroke: 1px;
+  }
 }

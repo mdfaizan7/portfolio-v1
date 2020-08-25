@@ -5,179 +5,180 @@ $bluefade: #0043e0;
 $gradient: #00b5f5;
 
 @mixin transformScale($size: 1) {
-	transform: scale($size);
-	-ms-transform: scale($size);
-	-webkit-transform: scale($size);
+  transform: scale($size);
+  -ms-transform: scale($size);
+  -webkit-transform: scale($size);
 }
 
 .details {
-	color: #555555;
-	padding-top: 50px;
-	padding-bottom: 40px;
+  color: #555555;
+  padding-top: 50px;
+  padding-bottom: 40px;
 
-	.mydetails {
-		overflow: hidden;
-		text-align: left;
+  .mydetails {
+    overflow: hidden;
+    text-align: left;
 
-		.info {
-			.name {
-				font-size: 17px;
-				font-weight: 600;
-				text-transform: uppercase;
-				text-decoration: solid;
-				margin-top: 30px;
-			}
+    .info {
+      .name {
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: solid;
+        margin-top: 30px;
+      }
 
-			.det-container {
-				margin-top: 20px;
+      .det-container {
+        margin-top: 20px;
 
-				.detail {
-					margin-bottom: 20px;
-				}
+        .detail {
+          margin-bottom: 20px;
+        }
 
-				.det-title {
-					font-weight: 600;
-					margin-bottom: 3px;
-				}
+        .det-title {
+          font-weight: 600;
+          margin-bottom: 3px;
+        }
 
-				.det-ans {
-					font-weight: 400;
-					width: 60%;
-				}
-			}
+        .det-ans {
+          font-weight: 400;
+          width: 60%;
+        }
+      }
 
-			.social-icons {
-				padding: 0;
-				list-style: none;
-				margin: 45px 5px 10px 2px;
+      .social-icons {
+        padding: 0;
+        list-style: none;
+        margin: 45px 5px 10px 2px;
 
-				li {
-					display: inline-block;
-					position: relative;
-					font-size: 20px;
-					margin-right: 20px;
-					margin-bottom: 5px;
-				}
+        li {
+          display: inline-block;
+          position: relative;
+          font-size: 20px;
+          margin-right: 20px;
+          margin-bottom: 5px;
+        }
 
-				i {
-					color: #fff;
-					position: absolute;
-					top: 22%;
-					left: 27%;
-					transition: all $timing ease-out;
-				}
+        i {
+          color: #fff;
+          position: absolute;
+          top: 22%;
+          left: 27%;
+          transition: all $timing ease-out;
+        }
 
-				a {
-					display: inline-block;
+        a {
+          display: inline-block;
 
-					&:before {
-						@include transformScale();
-						content: ' ';
-						width: 40px;
-						height: 40px;
-						border-radius: 100%;
-						display: block;
-						background: linear-gradient(45deg, $iconColor, $accent);
-						transition: all $timing ease-out;
-					}
+          &:before {
+            @include transformScale();
+            content: " ";
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, $iconColor, $accent);
+            transition: all $timing ease-out;
+          }
 
-					&:hover:before {
-						transform: scale(0);
-						transition: all $timing ease-in;
-					}
+          &:hover:before {
+            transform: scale(0);
+            transition: all $timing ease-in;
+          }
 
-					&:hover i {
-						@include transformScale(2.2);
-						color: $iconColor;
-						background: -webkit-linear-gradient(45deg, $iconColor, $accent);
-						background-clip: text;
-						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
-						transition: all $timing ease-in;
-					}
-				}
-			}
-		}
+          &:hover i {
+            @include transformScale(2.2);
+            color: $iconColor;
+            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
+          }
+        }
+      }
+    }
 
-		.h1 {
-			font-size: 20px;
-			font-weight: 600;
-			text-transform: uppercase;
-			text-decoration: solid;
-		}
-	}
+    .h1 {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: solid;
+    }
+  }
 
-	.photo {
-		transition: ease-in-out !important;
-		transition-duration: 1s !important;
-		transform-origin: 0 0 0;
-		.h1 {
-			font-size: 20px;
-			font-weight: 600;
-			text-transform: uppercase;
-			text-decoration: solid;
-		}
+  .photo {
+    transition: ease-in-out !important;
+    transition-duration: 1s !important;
+    transform-origin: 0 0 0;
+    .h1 {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: solid;
+    }
 
-		.pht {
-			margin-top: 35px;
-			width: 220px;
-			border-radius: 50%;
-			-webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.5);
-			-moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.5);
-			box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.5);
-		}
-	}
+    .pht {
+      margin-top: 35px;
+      width: 220px;
+      border-radius: 50%;
+      -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
 
-	.head {
-		margin-bottom: 50px;
-		font-weight: 700;
-		font-size: 45px;
-		stroke: 3px;
-	}
+  .head {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 45px;
+    stroke: 3px;
+    text-decoration: underline;
+  }
 
-	.radar-container {
-		.sets {
-			font-size: 15px;
-			letter-spacing: 0.4px;
-			font-weight: 600;
-			margin-top: 20px;
-			cursor: pointer;
+  .radar-container {
+    .sets {
+      font-size: 15px;
+      letter-spacing: 0.4px;
+      font-weight: 600;
+      margin-top: 20px;
+      cursor: pointer;
 
-			&:hover {
-				color: $gradient;
-			}
-		}
+      &:hover {
+        color: $gradient;
+      }
+    }
 
-		.skills {
-			font-size: 16x;
-		}
-	}
+    .skills {
+      font-size: 16x;
+    }
+  }
 }
 
 @media (max-width: 800px) {
-	.details {
-		.head {
-			font-size: 35px;
-			stroke: 1px;
-		}
+  .details {
+    .head {
+      font-size: 35px;
+      stroke: 1px;
+    }
 
-		.photo {
-			margin-top: 30px;
-		}
+    .photo {
+      margin-top: 30px;
+    }
 
-		.mydetails {
-			margin-top: 80px;
-			margin-left: 20%;
-		}
+    .mydetails {
+      margin-top: 80px;
+      margin-left: 20%;
+    }
 
-		.radar-container {
-			.sets {
-				font-size: 15px;
-				margin-top: 15px;
-			}
-			.radar {
-				z-index: -1;
-			}
-		}
-	}
+    .radar-container {
+      .sets {
+        font-size: 15px;
+        margin-top: 15px;
+      }
+      .radar {
+        z-index: -1;
+      }
+    }
+  }
 }
