@@ -4,7 +4,6 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component"
-
 import Fade from "@material-ui/core/Fade"
 import StarIcon from "@material-ui/icons/Star"
 
