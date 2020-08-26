@@ -1,0 +1,58 @@
+.skills {
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+  .head {
+    color: #555555;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 45px;
+    stroke: 3px;
+  }
+
+  .sub {
+    margin-bottom: 30px;
+    color: #555555;
+    font-weight: 600;
+  }
+}
+
+.skill-card {
+  margin-bottom: 30px;
+  background: transparent;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  will-change: transform;
+}
+
+.card-img {
+  width: 150px;
+}
+
+.caption {
+  color: #000;
+  font-weight: 600;
+  position: relative;
+  top: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .skills {
+    .head {
+      font-size: 35px;
+      stroke: 1px;
+    }
+  }
+  .card-img {
+    width: 55px;
+  }
+
+  .caption {
+    font-size: 8px;
+  }
+}
