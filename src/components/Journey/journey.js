@@ -1,5 +1,4 @@
-import SchoolIcon from "@material-ui/icons/School"
-import WorkIcon from "@material-ui/icons/Work"
+import { MdWork as WorkIcon, MdSchool as SchoolIcon } from "react-icons/md"
 
 const journey = [
   {

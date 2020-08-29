@@ -1,3 +1,32 @@
+.list {
+  color: #999;
+  width: 75%;
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+
+  .des {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.icons {
+  color: #999;
+  font-size: 30px;
+  margin-top: 20px;
+  .ico {
+    margin: 10px;
+  }
+}
+
+.selected {
+  color: #fff;
+}
+
 .marvel-device {
   display: inline-block;
   position: relative;
@@ -148,6 +177,28 @@
 }
 
 @media (max-width: 800px) {
+  .list {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .title {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .des {
+      font-size: 12px;
+    }
+  }
+
+  .icons {
+    font-size: 20px;
+    margin-top: 10px;
+    .ico {
+      margin: 10px;
+    }
+  }
+
   .marvel-device {
     .screen {
       border-radius: 0.25px;
@@ -216,4 +267,4 @@
   }
 }
 
-// laptop design credits: https://github.com/marvelapp/devices.css
+// laptop credits: https://github.com/marvelapp/devices.css
