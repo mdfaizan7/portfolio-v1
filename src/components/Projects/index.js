@@ -10,11 +10,11 @@ import {
   SiVueDotJs as Vue,
   SiGatsby as Gatsby,
   SiBootstrap as Bootstrap,
+  SiTensorflow as Tensorflow,
   SiMarkdown as MD,
   SiJupyter as Jupyter,
   SiPython as Python,
 } from "react-icons/si"
-
 import { FaNode as Node } from "react-icons/fa"
 import Container from "@material-ui/core/Container"
 import Grid from "@material-ui/core/Grid"
@@ -29,37 +29,44 @@ import "../../styles/projects.scss"
 const projects = [
   {
     title: "BitConnect",
-    desc: "BitConnect is a open source social media app hosted on Firebase.",
+    desc:
+      "BitConnect is a open source social media app hosted on Firebase. It has React on frontend with Redu for state management with an express server on the backend.",
     image: "https://i.imgur.com/DaXxIRQ.png",
     tools: [<JS />, <SiReact />, <Node />, <Redux />, <Firebase />],
+  },
+  {
+    title: "Sorting Visualizer",
+    desc:
+      "This is a sorting visualizer. Implemented Merge Sort, Heap Sort, Quick Sort, Radix Sort, Insertion Sort, Bubble Sort and Selection Sort.",
+    image: "https://i.imgur.com/LbrmdL1.png",
+    tools: [<JS />, <SiReact />],
+  },
+  {
+    title: "Chary",
+    desc:
+      "Chary is an anti predator chat app which detects detects predators and filters toxic messages. This was our submission for the Software India Hackathon which had the problem statement of:  Detection of Child Predators/Cyber Harassers on Social Media",
+    image: "https://i.imgur.com/nUZvDRo.png",
+    tools: [
+      <JS />,
+      <Vue />,
+      <Tensorflow />,
+      <Jupyter />,
+      <Python />,
+      <Firebase />,
+    ],
+  },
+  {
+    title: "Bit Posts",
+    desc:
+      "Bit Posts is a social media app. It has React with Apollo Server on the client side and a GraphQL API with Node on the backend.",
+    image: "https://i.imgur.com/FFfDRpy.png",
+    tools: [<JS />, <SiReact />, <Node />, <Gql />, <Apollo />, <Mongodb />],
   },
   {
     title: "Bit Blogs",
     desc: "Bit Blogs is a fictious blog application made with GatsbyJS.",
     image: "https://i.imgur.com/PBQaOtk.png",
-    tools: [<JS />, <SiReact />, <Gatsby />, <MD />],
-  },
-  {
-    title: "Sorting Visualizer",
-    desc:
-      "This is a sorting visualizer. You can run this app to see how different sorting techniques work.",
-    image: "https://i.imgur.com/LbrmdL1.png",
-    tools: [<JS />, <SiReact />],
-  },
-  {
-    title: "Sorting Visualizer",
-    desc:
-      "This is a sorting visualizer. You can run this app to see how different sorting techniques work.",
-    image: "https://i.imgur.com/nUZvDRo.png",
-    tools: [<JS />, <SiReact />],
-  },
-  {
-    title: "Sorting Visualizer",
-    desc:
-      "This is a sorting visualizer. You can run this app to see how different sorting techniques work.",
-    image:
-      "https://silly-allen-17594e.netlify.app/static/bit-connect-03b7c7bd57f7c71a21f7a0e1477c807e.png",
-    tools: [<JS />, <SiReact />],
+    tools: [<JS />, <Gatsby />, <Bootstrap />, <MD />],
   },
 ]
 
