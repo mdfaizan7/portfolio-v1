@@ -81,9 +81,11 @@ const Projects = () => {
   }
 
   return (
-    <div style={{ background: "#222", padding: "30px" }}>
+    <div className="projects">
+      <div className="head">My Projects</div>
+      <div className="sub">Some of my projects that I have worked on</div>
       <Container>
-        <Grid container alignItems="center" justify="space-between">
+        <Grid container alignItems="center" justify="center">
           <VizSensor
             partialVisibility
             onChange={isVisible => {

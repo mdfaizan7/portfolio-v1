@@ -1,5 +1,24 @@
-.list {
+.projects {
+  background-color: #222;
   color: #999;
+  padding: 30px;
+  padding-bottom: 80px;
+
+  .head {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 45px;
+    stroke: 3px;
+  }
+
+  .sub {
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #888;
+  }
+}
+
+.list {
   width: 75%;
 
   .title {
@@ -15,7 +34,6 @@
 }
 
 .icons {
-  color: #999;
   font-size: 30px;
   margin-top: 20px;
   text-align: center;
