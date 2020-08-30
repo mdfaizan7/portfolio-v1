@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import VizSensor from "react-visibility-sensor"
 import {
   VerticalTimeline,
@@ -30,6 +30,13 @@ const styles = {
 
 function Journey() {
   const [visible, setVisiblility] = useState(false)
+  const [mob, setMob] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setMob(window.innerWidth <= 800))
+
+    setMob(window.innerWidth <= 800)
+  }, [])
 
   return (
     <VizSensor
@@ -60,7 +67,7 @@ function Journey() {
                       color: "#fff",
                     }}
                     date={
-                      window.innerWidth <= 700 ? (
+                      mob ? (
                         <span style={{ color: "#fff" }}>{item.date}</span>
                       ) : (
                         item.date

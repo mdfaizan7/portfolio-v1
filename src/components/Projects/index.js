@@ -1,4 +1,5 @@
 import React from "react"
+import VizSensor from "react-visibility-sensor"
 import {
   SiReact,
   SiJavascript as JS,
@@ -21,6 +22,7 @@ import Grid from "@material-ui/core/Grid"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemText from "@material-ui/core/ListItemText"
+import Slide from "@material-ui/core/Slide"
 
 import Mac from "./Mac"
 
@@ -72,6 +74,7 @@ const projects = [
 
 const Projects = () => {
   const [selectedIndex, setSelectedIndex] = React.useState(0)
+  const [visible, setVisiblility] = React.useState(false)
 
   const handleListItemClick = (_, index) => {
     setSelectedIndex(index)
@@ -81,41 +84,48 @@ const Projects = () => {
     <div style={{ background: "#222", padding: "30px" }}>
       <Container>
         <Grid container alignItems="center" justify="space-between">
+          <VizSensor
+            partialVisibility
+            onChange={isVisible => {
+              setVisiblility(isVisible)
+            }}
+          >
+            <Slide in={visible} direction="right" timeout={1000}>
+              <Grid item lg={6} xs={12}>
+                <List className="list">
+                  {projects.map((item, index) => {
+                    return (
+                      <>
+                        <ListItem
+                          button
+                          selected={selectedIndex === index}
+                          onClick={event => handleListItemClick(event, index)}
+                        >
+                          <ListItemText
+                            className={`${
+                              selectedIndex === index ? "selected" : ""
+                            }`}
+                            disableTypography
+                          >
+                            <div className="title">{item.title}</div>
+                            <div className="des">{item.desc}</div>
+                          </ListItemText>
+                        </ListItem>
+                        {index < projects.length - 1 && (
+                          <hr style={{ margin: 0 }} />
+                        )}
+                      </>
+                    )
+                  })}
+                </List>
+              </Grid>
+            </Slide>
+          </VizSensor>
           <Grid item lg={6} xs={12}>
-            <List className="list">
-              {projects.map((item, index) => {
-                return (
-                  <>
-                    <ListItem
-                      button
-                      selected={selectedIndex === index}
-                      onClick={event => handleListItemClick(event, index)}
-                    >
-                      <ListItemText
-                        className={`${
-                          selectedIndex === index ? "selected" : ""
-                        }`}
-                        disableTypography
-                      >
-                        <div className="title">{item.title}</div>
-                        <div className="des">{item.desc}</div>
-                      </ListItemText>
-                    </ListItem>
-                    {index < projects.length - 1 && (
-                      <hr style={{ margin: 0 }} />
-                    )}
-                  </>
-                )
-              })}
-            </List>
-          </Grid>
-          <Grid item lg={6} xs={12}>
-            <Mac img={projects[selectedIndex].image} />
-            <div className="icons">
-              {projects[selectedIndex].tools.map(item => (
-                <span className="ico">{item}</span>
-              ))}
-            </div>
+            <Mac
+              img={projects[selectedIndex].image}
+              tools={projects[selectedIndex].tools}
+            />
           </Grid>
         </Grid>
       </Container>

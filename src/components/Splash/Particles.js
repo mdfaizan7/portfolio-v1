@@ -3,8 +3,8 @@ import Particles from "react-particles-js"
 
 const Particle = () => {
   const [size, setSize] = useState({
-    width: `${window.innerWidth}px`,
-    height: `${window.innerHeight}px`,
+    width: ``,
+    height: ``,
   })
 
   useEffect(() => {
@@ -14,6 +14,11 @@ const Particle = () => {
         height: `${window.innerHeight}px`,
       })
     )
+
+    setSize({
+      width: `${window.innerWidth}px`,
+      height: `${window.innerHeight}px`,
+    })
   }, [])
 
   return (
@@ -110,7 +115,7 @@ const styles = {
   particleContainer: {
     backgroundColor: "#000000",
     background:
-      "linear-gradient(0deg, rgba(0,0,0,1) -10%, rgba(0,0,0,0.5) 0%), url(https://scitechdaily.com/images/Image-of-the-Day.jpg)",
+      "linear-gradient(0deg, rgba(0,0,0,1) -10%, rgba(0,0,0,0.5) 0%), url(https://i.imgur.com/KykDOW7.jpg)",
     overflow: "hidden",
   },
 }

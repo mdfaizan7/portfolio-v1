@@ -25,8 +25,8 @@ const IndexPage = () => (
     <Splash />
     <Details />
     <Journey />
-    <Skills />
     <Projects />
+    <Skills />
   </div>
 )
 
