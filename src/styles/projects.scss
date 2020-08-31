@@ -1,6 +1,6 @@
 .projects {
   background-color: #222;
-  color: #999;
+  color: #cecece;
   padding: 30px;
   padding-bottom: 80px;
 
@@ -12,14 +12,32 @@
   }
 
   .sub {
+    color: #cecece;
     margin-bottom: 30px;
     font-weight: 600;
-    color: #888;
+  }
+
+  .foreword {
+    a {
+      font-weight: 600;
+      color: #cecece;
+    }
+  }
+
+  .links {
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    a {
+      text-decoration: none;
+      color: #cecece;
+    }
   }
 }
 
 .list {
   width: 75%;
+  color: #999;
 
   .title {
     font-size: 20px;
@@ -35,7 +53,7 @@
 
 .icons {
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 12px;
   text-align: center;
   overflow: auto;
   .ico {
@@ -197,6 +215,20 @@
 }
 
 @media (max-width: 800px) {
+  .projects {
+    .head {
+      font-size: 35px;
+    }
+
+    .foreword {
+      font-size: 16px;
+    }
+
+    .links {
+      font-size: 10px;
+    }
+  }
+
   .list {
     width: 100%;
     margin-bottom: 20px;
