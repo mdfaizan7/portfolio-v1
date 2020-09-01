@@ -7,4 +7,23 @@ html,
 body {
   margin: 0px !important;
   padding: 0px !important;
+
+  scrollbar-width: thin;
+  scrollbar-color: #444444 #c2c2c2;
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #c2c2c2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #444444;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #444444;
+  }
 }
