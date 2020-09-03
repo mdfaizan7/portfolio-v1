@@ -42,7 +42,7 @@ const Mac = ({ img, tools, website, repository, clientRepo, serverRepo }) => {
                       </a>
                     )
                   }
-                  return
+                  return ''
                 })}
               </Grid>
             </div>

@@ -156,6 +156,7 @@ const Projects = () => {
         >
           Github Profile
         </a>
+        .
       </div>
     </div>
   )
