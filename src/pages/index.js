@@ -1,6 +1,6 @@
 import React from "react"
+import Grid from "@material-ui/core/Grid"
 
-import SEO from "../components/seo"
 import Splash from "../components/Splash"
 import Details from "../components/Details"
 import Journey from "../components/Journey"
@@ -17,13 +17,26 @@ const IndexPage = () => (
       rel="stylesheet"
     />
 
-    <SEO title="Home" />
     <Splash />
     <Details />
     <Journey />
     <Projects />
     <Skills />
     <Contact />
+
+    <footer>
+      <Grid container alignItems="center" justify="space-between">
+        <Grid item>© 2020 Mohammad Faizan Azim</Grid>
+        <Grid item>
+          Made with{" "}
+          <span role="img" aria-label="love">
+            {" "}
+            ❤️
+          </span>{" "}
+          and Gatsby
+        </Grid>
+      </Grid>
+    </footer>
   </div>
 )
 
