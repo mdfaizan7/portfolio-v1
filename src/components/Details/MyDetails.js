@@ -108,15 +108,6 @@ const MyDetails = () => {
                       <i class="fab fa-instagram"></i>
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://www.reddit.com/user/faizu07"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-reddit-alien"></i>
-                    </a>
-                  </li>
                   <br />
                   <li>
                     <a
