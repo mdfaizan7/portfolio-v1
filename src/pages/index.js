@@ -1,5 +1,6 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
+import { Helmet } from "react-helmet"
 
 import Splash from "../components/Splash"
 import Details from "../components/Details"
@@ -12,6 +13,10 @@ import "../styles/App.scss"
 
 const IndexPage = () => (
   <div className="App">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Faizan's Portfolio</title>
+    </Helmet>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700&display=swap"
       rel="stylesheet"
