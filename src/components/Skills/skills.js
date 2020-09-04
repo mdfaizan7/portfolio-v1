@@ -1,71 +1,71 @@
 const skills = [
   {
-    url: "https://i.imgur.com/IRQmsrM.png",
+    url: "IRQmsrM.png",
     caption: "JavaScript",
   },
   {
-    url: "https://i.imgur.com/Lx5bqB4.png",
+    url: "Lx5bqB4.png",
     caption: "React",
   },
   {
-    url: "https://i.imgur.com/8JaJWta.png",
+    url: "8JaJWta.png",
     caption: "Python",
   },
   {
-    url: "https://i.imgur.com/A4WHEvF.png",
+    url: "A4WHEvF.png",
     caption: "Go",
   },
   {
-    url: "https://i.imgur.com/WCWiHuW.png",
+    url: "WCWiHuW.png",
     caption: "TypeScript",
   },
   {
-    url: "https://i.imgur.com/I2PgOAT.png",
+    url: "I2PgOAT.png",
     caption: "Graphql",
   },
   {
-    url: "https://i.imgur.com/SctOfpG.png",
+    url: "SctOfpG.png",
     caption: "Gatsby",
   },
   {
-    url: "https://i.imgur.com/EzxcubF.png",
+    url: "EzxcubF.png",
     caption: "Restful API",
   },
   {
-    url: "https://i.imgur.com/nPuhX7Y.png",
+    url: "nPuhX7Y.png",
     caption: "Redux",
   },
   {
-    url: "https://i.imgur.com/8gIzdYq.png",
+    url: "8gIzdYq.png",
     caption: "Node.js",
   },
   {
-    url: "https://i.imgur.com/jahsnv3.png",
+    url: "jahsnv3.png",
     caption: "Express.js",
   },
 
   {
-    url: "https://i.imgur.com/TfZENvu.png",
+    url: "TfZENvu.png",
     caption: "Git",
   },
   {
-    url: "https://i.imgur.com/7TSV4Xj.png",
+    url: "7TSV4Xj.png",
     caption: "Webpack",
   },
   {
-    url: "https://i.imgur.com/HDoC3Fp.png",
+    url: "HDoC3Fp.png",
     caption: "Mongodb",
   },
   {
-    url: "https://i.imgur.com/CKcYmBa.png",
+    url: "CKcYmBa.png",
     caption: "Postgres",
   },
   {
-    url: "https://i.imgur.com/lqY4TF1.png",
+    url: "lqY4TF1.png",
     caption: "Apollo",
   },
   {
-    url: "https://i.imgur.com/redCCxz.png",
+    url: "redCCxz.png",
     caption: "Firebase",
   },
 ]

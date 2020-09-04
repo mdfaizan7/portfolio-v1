@@ -55,7 +55,11 @@ const SkillCard = ({ url, caption }) => {
             transform: props.xys.interpolate(trans),
           }}
         >
-          <img src={url} className="card-img" alt={caption} />
+          <img
+            src={require(`../../images/${url}`)}
+            className="card-img"
+            alt={caption}
+          />
           <div className="caption" style={{ opacity: hovered }}>
             {caption}
           </div>
