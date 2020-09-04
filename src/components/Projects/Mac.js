@@ -2,6 +2,7 @@ import React from "react"
 import VizSensor from "react-visibility-sensor"
 import Slide from "@material-ui/core/Slide"
 import Grid from "@material-ui/core/Grid"
+import Img from "../../images/Image"
 
 const Mac = ({ img, tools, website, repository, clientRepo, serverRepo }) => {
   const [visible, setVisiblility] = React.useState(false)
@@ -20,8 +21,16 @@ const Mac = ({ img, tools, website, repository, clientRepo, serverRepo }) => {
           <div>
             <div class="marvel-device macbook">
               <div class="top-bar"></div>
-              <div class="screen">
-                <img src={img} alt="project-img" width="100%" height="100%" />
+              <div class="screen" style={{ height: "100%" }}>
+                <Img
+                  alt="Gatsby in Space"
+                  filename={img}
+                  styles={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                />
               </div>
               <div class="bottom-bar"></div>
             </div>
@@ -42,7 +51,7 @@ const Mac = ({ img, tools, website, repository, clientRepo, serverRepo }) => {
                       </a>
                     )
                   }
-                  return ''
+                  return ""
                 })}
               </Grid>
             </div>

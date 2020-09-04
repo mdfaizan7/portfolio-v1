@@ -5,6 +5,10 @@
   padding-top: 90px;
   padding-bottom: 80px;
 
+  .gatsby-img {
+    object-fit: cover;
+  }
+
   .head {
     margin-bottom: 30px;
     font-weight: 700;

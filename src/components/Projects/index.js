@@ -33,7 +33,7 @@ const projects = [
     title: "BitConnect",
     desc:
       "BitConnect is a open source social media app hosted on Firebase. It has React on frontend with Redu for state management with an express server on the backend.",
-    image: "https://i.imgur.com/DaXxIRQ.png",
+    image: "DaXxIRQ.png",
     tools: [<JS />, <SiReact />, <Node />, <Redux />, <Firebase />],
     website: "https://bitconnect-b7b67.firebaseapp.com/",
     serverRepo: "https://github.com/mdfaizan7/react-bitConnect-functions",
@@ -43,7 +43,7 @@ const projects = [
     title: "Sorting Visualizer",
     desc:
       "This is a sorting visualizer. Implemented Merge Sort, Heap Sort, Quick Sort, Radix Sort, Insertion Sort, Bubble Sort and Selection Sort.",
-    image: "https://i.imgur.com/LbrmdL1.png",
+    image: "LbrmdL1.png",
     tools: [<JS />, <SiReact />],
     website: "https://mdfaizan7.github.io/sorting-visualizer/",
     repository: "https://github.com/mdfaizan7/sorting-visualizer",
@@ -52,7 +52,7 @@ const projects = [
     title: "Chary",
     desc:
       "Chary is an anti predator chat app which detects detects predators and filters toxic messages. This was our submission for the Software India Hackathon which had the problem statement of:  Detection of Child Predators/Cyber Harassers on Social Media",
-    image: "https://i.imgur.com/nUZvDRo.png",
+    image: "nUZvDRo.png",
     tools: [
       <JS />,
       <Vue />,
@@ -68,7 +68,7 @@ const projects = [
     title: "Bit Posts",
     desc:
       "Bit Posts is a social media app. It has React with Apollo Server on the client side and a GraphQL API with Node on the backend.",
-    image: "https://i.imgur.com/FFfDRpy.png",
+    image: "FFfDRpy.png",
     tools: [<JS />, <SiReact />, <Node />, <Gql />, <Apollo />, <Mongodb />],
     clientRepo: "https://github.com/mdfaizan7/merng-bitposts-client",
     serverRepo: "https://github.com/mdfaizan7/merng-bitposts-server",
@@ -76,7 +76,7 @@ const projects = [
   {
     title: "Bit Blogs",
     desc: "Bit Blogs is a fictious blog application made with GatsbyJS.",
-    image: "https://i.imgur.com/PBQaOtk.png",
+    image: "PBQaOtk.png",
     tools: [<JS />, <Gatsby />, <Bootstrap />, <MD />],
     website: "https://peaceful-montalcini-173481.netlify.app/",
     repository: "https://github.com/mdfaizan7/gatsby-bit-blogs",
