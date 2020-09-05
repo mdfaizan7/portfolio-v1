@@ -1,6 +1,7 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
 import { Helmet } from "react-helmet"
+import icon from "../images/icon.png"
 
 import Splash from "../components/Splash"
 import Details from "../components/Details"
@@ -15,6 +16,8 @@ const IndexPage = () => (
   <div className="App">
     <Helmet>
       <meta charSet="utf-8" />
+      <link rel="icon" href={icon} />
+      <link rel="apple-touch-icon" href={icon} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Mohammad Faizan Azim</title>
     </Helmet>
