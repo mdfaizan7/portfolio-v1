@@ -15,21 +15,21 @@ body {
   padding: 0px !important;
 
   scrollbar-width: thin;
-  scrollbar-color: #444444 #c2c2c2;
+  scrollbar-color: #222222 #e6e6e6;
 
   ::-webkit-scrollbar {
     width: 6px;
   }
 
   ::-webkit-scrollbar-track {
-    background: #c2c2c2;
+    background: #e6e6e6;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #444444;
+    background: #222222;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #444444;
+    background: #222222;
   }
 }
