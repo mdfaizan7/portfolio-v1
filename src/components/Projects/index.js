@@ -32,7 +32,7 @@ const projects = [
   {
     title: "BitConnect",
     desc:
-      "BitConnect is a open source social media app hosted on Firebase. It has React on frontend with Redu for state management with an express server on the backend.",
+      "BitConnect is a open source social media app hosted on Firebase. It has React on frontend with Redux for state management with an express server on the backend.",
     image: "DaXxIRQ.png",
     tools: [<JS />, <SiReact />, <Node />, <Redux />, <Firebase />],
     website: "https://bitconnect-b7b67.firebaseapp.com/",
@@ -51,7 +51,7 @@ const projects = [
   {
     title: "Chary",
     desc:
-      "Chary is an anti predator chat app which detects detects predators and filters toxic messages. This was our submission for the Software India Hackathon which had the problem statement of:  Detection of Child Predators/Cyber Harassers on Social Media",
+      "Chary is an anti predator chat app which detects predators and filters toxic messages. This was our submission for the Software India Hackathon which had the problem statement of:  Detection of Child Predators/Cyber Harassers on Social Media",
     image: "nUZvDRo.png",
     tools: [
       <JS />,
