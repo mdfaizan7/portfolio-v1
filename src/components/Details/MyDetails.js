@@ -1,6 +1,12 @@
 import React, { useState } from "react"
 import VizSensor from "react-visibility-sensor"
-
+import {
+  FaInstagram,
+  FaTelegramPlane,
+  FaGithub,
+  FaAngellist,
+  FaLinkedinIn,
+} from "react-icons/fa"
 import Grid from "@material-ui/core/Grid"
 import Slide from "@material-ui/core/Slide"
 
@@ -80,54 +86,63 @@ const MyDetails = () => {
                   </Grid>
                 </Grid>
 
-                <ul className="social-icons">
-                  <li>
-                    <a
-                      href="https://github.com/mdfaizan7"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/mohammad-faizan-azim-8a84b1142/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/md_faizan7/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                  <br />
-                  <li>
-                    <a
-                      href="https://t.me/mdfaizan7"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-telegram-plane"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://angel.co/u/mdfaizan7"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i class="fab fa-angellist"></i>
-                    </a>
-                  </li>
-                </ul>
+                <div class="social-buttons">
+                  <a
+                    href="https://www.linkedin.com/in/mohammad-faizan-azim-8a84b1142/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-buttons__button social-button social-button--linkedin"
+                    aria-label="LinkedIn"
+                  >
+                    <span class="social-button__inner">
+                      <FaLinkedinIn className="icons" />
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/mdfaizan7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-buttons__button social-button social-button--github"
+                    aria-label="Github"
+                  >
+                    <span class="social-button__inner">
+                      <FaGithub className="icons" />
+                    </span>
+                  </a>
+                  <a
+                    href="https://t.me/mdfaizan7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-buttons__button social-button social-button--telegram"
+                    aria-label="Telegram"
+                  >
+                    <span class="social-button__inner">
+                      <FaTelegramPlane className="icons" />
+                    </span>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/md_faizan7/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-buttons__button social-button social-button--instagram"
+                    aria-label="Instagram"
+                  >
+                    <span class="social-button__inner">
+                      <FaInstagram className="icons" />
+                    </span>
+                  </a>
+                  <a
+                    href="https://angel.co/u/mdfaizan7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-buttons__button social-button social-button--angel"
+                    aria-label="Angel"
+                  >
+                    <span class="social-button__inner">
+                      <FaAngellist className="icons" />
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

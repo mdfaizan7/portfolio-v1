@@ -79,12 +79,17 @@
     width: 100%;
     position: relative;
     height: 100%;
+    background: black;
     z-index: 3;
     background: white;
     overflow: hidden;
     display: block;
     border-radius: 0.5px;
     box-shadow: 0 0 0 1.5px #111;
+  }
+
+  .loading {
+    background: black;
   }
 
   .top-bar,

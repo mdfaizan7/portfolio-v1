@@ -25,6 +25,7 @@ const Mac = ({ img, tools, website, repository, clientRepo, serverRepo }) => {
                 <Img
                   alt="Gatsby in Space"
                   filename={img}
+                  className="loading"
                   styles={{
                     width: "100%",
                     height: "100%",

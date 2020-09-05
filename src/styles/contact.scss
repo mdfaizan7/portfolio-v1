@@ -72,7 +72,16 @@
   }
 }
 
+footer {
+  font-family: "Raleway";
+  font-weight: 300;
+}
+
 @media (max-width: 900px) {
+  footer {
+    font-size: 12px;
+  }
+
   .contact {
     padding: 50px 0px 50px 0px;
 
