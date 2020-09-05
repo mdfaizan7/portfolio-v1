@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "mdfaizan7",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Mohammad Faizan Azim's Portfolio Site",
+  "version": "mdfaizan7 <faizaanazim@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -31,10 +30,12 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "2.0.5"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "portfolio"
   ],
   "license": "0BSD",
   "scripts": {
@@ -48,7 +49,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/mdfaizan7/mdfaizan7.github.io"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
