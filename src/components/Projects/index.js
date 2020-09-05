@@ -107,7 +107,7 @@ const Projects = () => {
               <Grid item lg={6} xs={12}>
                 <List className="list">
                   {projects.map((item, index) => (
-                    <>
+                    <div key={index}>
                       <ListItem
                         button
                         selected={selectedIndex === index}
@@ -126,7 +126,7 @@ const Projects = () => {
                       {index < projects.length - 1 && (
                         <hr style={{ margin: 0 }} />
                       )}
-                    </>
+                    </div>
                   ))}
                 </List>
               </Grid>

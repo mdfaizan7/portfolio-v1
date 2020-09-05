@@ -15,7 +15,8 @@ const IndexPage = () => (
   <div className="App">
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Faizan's Portfolio</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Mohammad Faizan Azim</title>
     </Helmet>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700&display=swap"

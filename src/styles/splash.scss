@@ -32,6 +32,22 @@
   }
 }
 
+.blinking-cursor {
+  font-weight: 300;
+  color: #ffffff;
+  animation: 0.7s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
 @media (max-width: 899px) {
   .headContainer {
     width: 85%;

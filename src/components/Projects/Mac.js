@@ -19,9 +19,9 @@ const Mac = ({ img, tools, website, repository, clientRepo, serverRepo }) => {
       <div style={{ overflow: "hidden" }}>
         <Slide in={visible} direction="left" timeout={1000}>
           <div>
-            <div class="marvel-device macbook">
-              <div class="top-bar"></div>
-              <div class="screen" style={{ height: "100%" }}>
+            <div className="marvel-device macbook">
+              <div className="top-bar"></div>
+              <div className="screen" style={{ height: "100%" }}>
                 <Img
                   alt="Gatsby in Space"
                   filename={img}
@@ -33,15 +33,20 @@ const Mac = ({ img, tools, website, repository, clientRepo, serverRepo }) => {
                   }}
                 />
               </div>
-              <div class="bottom-bar"></div>
+              <div className="bottom-bar"></div>
             </div>
 
             <div className="links">
               <Grid container alignItems="center" justify="space-evenly">
-                {links.map((item, idx) => {
-                  if (item) {
-                    return (
-                      <a href={item} target="_blank" rel="noopener noreferrer">
+                {links.map(
+                  (item, idx) =>
+                    item && (
+                      <a
+                        href={item}
+                        key={idx}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {idx === 0
                           ? "Client Repository"
                           : idx === 1
@@ -51,13 +56,16 @@ const Mac = ({ img, tools, website, repository, clientRepo, serverRepo }) => {
                           : "Server Repository"}
                       </a>
                     )
-                  }
-                  return ""
-                })}
+                )}
               </Grid>
             </div>
             <div className="icons">
-              {tools && tools.map(item => <span className="ico">{item}</span>)}
+              {tools &&
+                tools.map((item, idx) => (
+                  <span key={idx} className="ico">
+                    {item}
+                  </span>
+                ))}
             </div>
           </div>
         </Slide>

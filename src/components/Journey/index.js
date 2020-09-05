@@ -11,6 +11,7 @@ import journeyAr from "./journey"
 
 import "react-vertical-timeline-component/style.min.css"
 import "../../styles/journey.scss"
+import { MdIndeterminateCheckBox } from "react-icons/md"
 
 const styles = {
   leftEl: {
@@ -61,7 +62,7 @@ function Journey() {
         <VerticalTimeline>
           {journeyAr &&
             journeyAr.map((item, index) => (
-              <GrowAnimate>
+              <GrowAnimate key={index}>
                 <VerticalTimelineElement
                   contentStyle={
                     index % 2 === 0 ? styles.leftEl : styles.rightEl

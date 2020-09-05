@@ -26,7 +26,7 @@ const ContactMe = () => {
         </button>
       </a>
 
-      <div class="social-links-container">
+      <div className="social-links-container">
         <ul>
           <li>
             <a href="https://t.me/mdfaizan7">Telegram</a>
