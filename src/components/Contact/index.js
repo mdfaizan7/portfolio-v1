@@ -29,21 +29,49 @@ const ContactMe = () => {
       <div className="social-links-container">
         <ul>
           <li>
-            <a href="https://t.me/mdfaizan7">Telegram</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://t.me/mdfaizan7"
+            >
+              Telegram
+            </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/md_faizan7/">Instagram</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/md_faizan7/"
+            >
+              Instagram
+            </a>
           </li>
           <li>
-            <a href="https://angel.co/u/mdfaizan7">Angel.co</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://angel.co/u/mdfaizan7"
+            >
+              Angel.co
+            </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/mohammad-faizan-azim-8a84b1142/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/mohammad-faizan-azim-8a84b1142/"
+            >
               Linkedin
             </a>
           </li>
           <li>
-            <a href="https://github.com/mdfaizan7">Github</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/mdfaizan7"
+            >
+              Github
+            </a>
           </li>
         </ul>
       </div>
