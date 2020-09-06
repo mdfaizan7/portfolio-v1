@@ -27,7 +27,7 @@ const sets = [
   },
   {
     name: "DevOps",
-    desc: <span>Agile, SCRUM</span>,
+    desc: <span>Agile, SCRUM, Webpack, CI/CD</span>,
   },
 ]
 

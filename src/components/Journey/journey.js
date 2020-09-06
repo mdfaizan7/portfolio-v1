@@ -22,7 +22,7 @@ const journey = [
     icon: WorkIcon,
     date: "May 2020 - Present",
     description:
-      "Spation is a Milan based startup which aims to turn restaurants into drop-in coworking spaces. It has a citywide network of distributed, flexible and affordable drop-in workspaces where you can discover your next favorite place to work hassle-free",
+      "Spation is a Milan based startup which aims to turn restaurants into drop-in coworking spaces. It has a citywide network of distributed, flexible and affordable drop-in workspaces where you can discover your next favorite place to work hassle-free.",
     details: [
       "Build the entire structure of thier PWA App using Webpack with React",
       "Worked on the backend and the frontend of their projects",
