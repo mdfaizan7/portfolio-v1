@@ -24,11 +24,10 @@ const journey = [
     description:
       "Spation is a Milan based startup which aims to turn restaurants into drop-in coworking spaces. It has a citywide network of distributed, flexible and affordable drop-in workspaces where you can discover your next favorite place to work hassle-free.",
     details: [
-      "Build the entire structure of thier PWA App using Webpack with React",
-      "Worked on the backend and the frontend of their projects",
-      "Made a open-source donation platform for Italian restaurants",
-      "Worked with Webpack and service-workers",
-      "Used technologies like Stripe and Mapbox",
+      "Single-handedly spearheaded their Minimal Viable Product(MVP)",
+      "Created a product for alpha testing in 2 weeks",
+      "Made an open-source donation platform for Italian restaurants",
+      "Maximized the performance by more than 50% using webpack",
     ],
   },
   {

@@ -11,7 +11,6 @@ import journeyAr from "./journey"
 
 import "react-vertical-timeline-component/style.min.css"
 import "../../styles/journey.scss"
-import { MdIndeterminateCheckBox } from "react-icons/md"
 
 const styles = {
   leftEl: {

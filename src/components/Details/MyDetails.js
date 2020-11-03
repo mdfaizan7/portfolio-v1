@@ -7,8 +7,42 @@ import {
   FaAngellist,
   FaLinkedinIn,
 } from "react-icons/fa"
+import { SiDevDotTo } from "react-icons/si"
 import Grid from "@material-ui/core/Grid"
 import Slide from "@material-ui/core/Slide"
+
+const details = [
+  {
+    link: "https://www.linkedin.com/in/mohammad-faizan-azim-8a84b1142/",
+    label: "linkedin",
+    icon: <FaLinkedinIn className="icons" />,
+  },
+  {
+    link: "https://github.com/mdfaizan7",
+    label: "github",
+    icon: <FaGithub className="icons" />,
+  },
+  {
+    link: "https://github.com/mdfaizan7",
+    label: "telegram",
+    icon: <FaTelegramPlane className="icons" />,
+  },
+  {
+    link: "https://dev.to/mdfaizan7",
+    label: "angel",
+    icon: <SiDevDotTo className="icons" />,
+  },
+  {
+    link: "https://github.com/mdfaizan7",
+    label: "instagram",
+    icon: <FaInstagram className="icons" />,
+  },
+  {
+    link: "https://github.com/mdfaizan7",
+    label: "angel",
+    icon: <FaAngellist className="icons" />,
+  },
+]
 
 const MyDetails = () => {
   const [visible, setVisiblility] = useState(false)
@@ -87,61 +121,17 @@ const MyDetails = () => {
                 </Grid>
 
                 <div className="social-buttons">
-                  <a
-                    href="https://www.linkedin.com/in/mohammad-faizan-azim-8a84b1142/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-buttons__button social-button social-button--linkedin"
-                    aria-label="LinkedIn"
-                  >
-                    <span className="social-button__inner">
-                      <FaLinkedinIn className="icons" />
-                    </span>
-                  </a>
-                  <a
-                    href="https://github.com/mdfaizan7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-buttons__button social-button social-button--github"
-                    aria-label="Github"
-                  >
-                    <span className="social-button__inner">
-                      <FaGithub className="icons" />
-                    </span>
-                  </a>
-                  <a
-                    href="https://t.me/mdfaizan7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-buttons__button social-button social-button--telegram"
-                    aria-label="Telegram"
-                  >
-                    <span className="social-button__inner">
-                      <FaTelegramPlane className="icons" />
-                    </span>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/md_faizan7/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-buttons__button social-button social-button--instagram"
-                    aria-label="Instagram"
-                  >
-                    <span className="social-button__inner">
-                      <FaInstagram className="icons" />
-                    </span>
-                  </a>
-                  <a
-                    href="https://angel.co/u/mdfaizan7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-buttons__button social-button social-button--angel"
-                    aria-label="Angel"
-                  >
-                    <span className="social-button__inner">
-                      <FaAngellist className="icons" />
-                    </span>
-                  </a>
+                  {details.map(({ icon, label, link }) => (
+                    <a
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`social-buttons__button social-button social-button--${label}`}
+                      aria-label={label}
+                    >
+                      <span className="social-button__inner">{icon}</span>
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>

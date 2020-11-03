@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Faizan's Portfolio`,
-    description: ``,
-    author: `@faizan`,
+    description: `Faizan is a Full Stack Developer`,
+    author: `@mdfaizan7 faizaanazim@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,10 +22,12 @@ module.exports = {
         name: `Faizan's Portfolio`,
         short_name: `Faizan's Portfolio`,
         start_url: `/`,
-        background_color: `#000000`,
+        background_color: `#fff`,
         theme_color: `#000000`,
         display: `minimal-ui`,
+        icon: "src/images/icon.png",
       },
     },
+    `gatsby-plugin-offline`,
   ],
 }
