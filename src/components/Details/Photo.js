@@ -3,7 +3,7 @@ import VizSensor from "react-visibility-sensor"
 
 import Fade from "@material-ui/core/Fade"
 
-import myPhoto from "../../images/my-photo.jpg"
+import myPhoto from "../../images/my-photo.png"
 
 const Photo = () => {
   const [photoViz, setPhotoViz] = useState(false)
