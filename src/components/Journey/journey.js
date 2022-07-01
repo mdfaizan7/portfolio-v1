@@ -2,6 +2,24 @@ import { MdWork as WorkIcon, MdSchool as SchoolIcon } from "react-icons/md"
 
 const journey = [
   {
+    title: "Full Stack Developer",
+    subTitle: "Powerplay",
+    icon: WorkIcon,
+    date: "November 2020 - Present",
+    description: "Simplifying communication for construction.",
+    details: [
+      "Introduced Typescript on Powerplay WebApp, which resulted into catching errors in compile time(instead of runtime), increased productivity, and improved developer experience for the team.",
+      "Designed and implemented a solution for rendering tree structure data in tabular format with the additional functionality of inline adding/editing records.",
+      "Designed and developed an architecture for reusable dynamic forms inside the application which supports 5+ types of questions and a tracking mechanism.",
+      "Determine and communicate coding standards and best practices as tools and technologies evolve.",
+      "Used understanding of React fundamentals to promote better component lifecycle practices, increasing turnaround speed by 23% with 100% deadline adherence.",
+      "Created a distributed data streaming system using Apache Kafka, which helped the data team run complex queries effectively.",
+      "On-boarded and mentored 5 new front-end developers through regular coaching sessions and work reviews.",
+      "Created an admin dashboard with various operational features which are used by the operation team for their day-to-day tasks. This allowed the resolution of user tickets to be faster and more effective than before.",
+      "Created custom reusable components library which resulted in a 20% decrease in developer time.",
+    ],
+  },
+  {
     title: "Finalists - Smart India Hackathon 2020",
     subTitle: "Government of India",
     icon: WorkIcon,
@@ -20,7 +38,7 @@ const journey = [
     title: "Full Stack Developer Intern",
     subTitle: "Spation",
     icon: WorkIcon,
-    date: "May 2020 - Present",
+    date: "May 2020 - December 2020",
     description:
       "Spation is a Milan based startup which aims to turn restaurants into drop-in coworking spaces. It has a citywide network of distributed, flexible and affordable drop-in workspaces where you can discover your next favorite place to work hassle-free.",
     details: [
