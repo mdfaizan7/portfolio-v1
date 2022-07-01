@@ -2,7 +2,6 @@
   "name": "mdfaizan7",
   "private": true,
   "description": "Mohammad Faizan Azim's Portfolio Site",
-  "version": "mdfaizan7 <faizaanazim@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
