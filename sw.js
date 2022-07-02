@@ -27,40 +27,34 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-0336d10daabae93602be.js"
+    "url": "webpack-runtime-6288a91596197059cbd5.js"
   },
   {
-    "url": "styles.bdb4f1b0cb56bda32c75.css"
+    "url": "styles.874cc4a3b52797923132.css"
   },
   {
-    "url": "styles-407fe62976dc5310c43e.js"
+    "url": "framework-3ae521bb8f02a1a36204.js"
   },
   {
-    "url": "framework-11348fb0fa7c3ad87864.js"
-  },
-  {
-    "url": "app-66fb429933a97912c44e.js"
+    "url": "app-b1e31722f6515b8cefaf.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "90a14d424a8701c9e5aabff174087021"
+    "revision": "183aa27eee9a3d1b8002878d7bac7500"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-d3ee03be2ef85643f368.js"
-  },
-  {
-    "url": "polyfill-2bdc720517636649befc.js"
+    "url": "polyfill-ca4d284f8d64cf2508b6.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "91ebb4bc11bb309ce64c984952ab641d"
+    "revision": "b1d62ea64a006bef2dc4280819233d1a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\/page-data\/.*\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|avif|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 
 /* global importScripts, workbox, idbKeyval */
@@ -79,6 +73,24 @@ const MessageAPI = {
 
   clearPathResources: event => {
     event.waitUntil(idbKeyval.clear())
+
+    // We detected compilation hash mismatch
+    // we should clear runtime cache as data
+    // files might be out of sync and we should
+    // do fresh fetches for them
+    event.waitUntil(
+      caches.keys().then(function (keyList) {
+        return Promise.all(
+          keyList.map(function (key) {
+            if (key && key.includes(`runtime`)) {
+              return caches.delete(key)
+            }
+
+            return Promise.resolve()
+          })
+        )
+      })
+    )
   },
 
   enableOfflineShell: () => {
@@ -145,7 +157,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-66fb429933a97912c44e.js`))) {
+  if (!resources || !(await caches.match(`/app-b1e31722f6515b8cefaf.js`))) {
     return await fetch(event.request)
   }
 
